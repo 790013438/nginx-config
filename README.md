@@ -1,5 +1,5 @@
-# nginx-config
-# ==============
+nginx-config
+==============
 ## Installing NGINX(安装)
 1. Open terminal window and open the sources.list file using the command
 ```
