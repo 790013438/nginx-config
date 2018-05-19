@@ -56,3 +56,18 @@ All these default configurations enable the Nginx server to start:
 ```
 ls –F /etc/nginx/
 ```
+# 视频
+
+```bash
+sudo apt-get install -y unzip build-essential libpcre3 libpcre3-dev libssl-dev
+cd /opt
+wget http://nginx.org/download/nginx-1.10.1.tar.gz
+wget https://github.com/arut/nginx-rtmp-module/archive/master.zip
+tar -zxvf nginx-1.10.1.tar.gz
+unzip -o master.zip
+cd nginx-1.10.1
+
+./configure --with-http_ssl_module --add-module=../nginx-rtmp-module-master
+make
+make install
+```
